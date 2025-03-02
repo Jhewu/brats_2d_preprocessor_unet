@@ -31,8 +31,8 @@ def CopyTree(src, dst):
 """Main Runtime"""
 def CopyTrainingImages(): 
     for mod in MODALITY:
-        input_folder = f"{mod}/images"
-        dest_folder = f"{mod}_dataset/images"
+        input_folder = f"dataset_sliced/{mod}/images"
+        dest_folder = f"final_dataset/{mod}/images"
         CreateDir(dest_folder)
 
         # Use ThreadPoolExecutor 

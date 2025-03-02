@@ -42,8 +42,8 @@ def BinarizeGT(input_dir, output_dir):
 """Main Runtime"""
 def GTBinarizer(): 
     for mod in MODALITY:
-        gt_folder = f"{mod}/labels"
-        DEST_FOLDER = f"binarized_{mod}/masks"
+        gt_folder = f"dataset_sliced/{mod}/labels"
+        DEST_FOLDER = f"binarized_masks/binarized_{mod}/masks"
         # set up cwd 
         root_dir = os.getcwd()
         gt_dir = os.path.join(root_dir, gt_folder)

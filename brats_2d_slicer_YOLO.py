@@ -101,8 +101,8 @@ def BraTS_2D_Slicer_YOLO():
     for mod in MODALITY:
         # change all folder hyperparameters
         DATASET_FOLDER = "dataset_split"
-        DEST_FOLDER = f"{mod}/images"
-        DEST_FOLDER_GT = f"{mod}/labels"
+        DEST_FOLDER = f"dataset_sliced/{mod}/images"
+        DEST_FOLDER_GT = f"dataset_sliced/{mod}/labels"
 
         # set up cwd and dataset split dir
         root_dir = os.getcwd()

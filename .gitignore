@@ -1,6 +1,2 @@
 raw_files/
-t1c_dataset/
-t1n_dataset/
-t2f_dataset/
-t2w_dataset/
-stack_dataset/
+final_dataset/
